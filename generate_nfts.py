@@ -6,45 +6,45 @@ import json
 
 # clothes
 group1 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/clothes/Classic Red Shirt.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/clothes/CLC Hoodie.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/clothes/CLC TJ.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/clothes/Suit.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/clothes/Classic Red Shirt.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/clothes/CLC Hoodie.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/clothes/CLC TJ.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/clothes/Suit.png"
 ]
 # eyes
 group2 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyes/Angry Blue.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyes/Classic Cool.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyes/Closed.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyes/Cyber Glow.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyes/Angry Blue.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyes/Classic Cool.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyes/Closed.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyes/Cyber Glow.png"
 ]
 # eyewear
 group3 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyewear/Designer.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyewear/Flying Goggles.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyewear/Snow Goggles.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/eyewear/Tiger Sunglasses.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyewear/Designer.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyewear/Flying Goggles.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyewear/Snow Goggles.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/eyewear/Tiger Sunglasses.png"
 ]
 # fur
 group4 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/fur/Classic.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/fur/Cyan Magenta.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/fur/Magma.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/fur/Toxic.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/fur/Classic.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/fur/Cyan Magenta.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/fur/Magma.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/fur/Toxic.png"
 ]
 # hair
 group5 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/hair/CLC Bucket Hat.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/hair/Cool Classic.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/hair/Mafia Hat.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/hair/Snow Blue.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/hair/CLC Bucket Hat.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/hair/Cool Classic.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/hair/Mafia Hat.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/hair/Snow Blue.png"
 ]
 # mouth
 group6 = [
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/mouth/Classic Closed.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/mouth/Classic Open.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/mouth/Gold Teeth.png",
-  r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/mouth/Holding Money.png"
+  r"/Users/your_username/Projects/cool-lions/infra/assets/mouth/Classic Closed.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/mouth/Classic Open.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/mouth/Gold Teeth.png",
+  r"/Users/your_username/Projects/cool-lions/infra/assets/mouth/Holding Money.png"
 ]
 
 counter = 0
@@ -53,7 +53,7 @@ attributesArray = []
 
 def createImage(a,b,c,d,e,f,counter):
       
-  bg = r"/Users/mihailomaksa/Projects/cool-lions/infra/assets/bg/navy.png"
+  bg = r"/Users/your_username/Projects/cool-lions/infra/assets/bg/navy.png"
 
   first = group4[a]
   second = group5[b]
@@ -138,7 +138,7 @@ def createImage(a,b,c,d,e,f,counter):
     attributesArray.append(lion)
 
     global counter2;
-    name = "/Users/mihailomaksa/Projects/cool-lions/infra/merged/" + str(counter2) + ".png"
+    name = "/Users/your_username/Projects/cool-lions/infra/merged/" + str(counter2) + ".png"
     intermediate5.save(name)
     counter2 += 1
 
@@ -154,5 +154,5 @@ for a in range(4):
             counter = counter + 1
 
 
-with open('/Users/mihailomaksa/Projects/cool-lions/infra/attributes.json', 'w') as outfile:
+with open('/Users/your_username/Projects/cool-lions/infra/attributes.json', 'w') as outfile:
   json.dump(attributesArray, outfile)
